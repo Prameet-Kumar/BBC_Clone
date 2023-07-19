@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Libre+Baskerville&family=Roboto+Slab:wght@100&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Home-BBC</title>
+
+    </svg>
+    <style>
+        .nav {
+            margin: 30px 20px;
+            text-decoration: none;
+            position: relative;
+            float: right;
+            font-weight: bold;
+            color: black;
+        }
+
+        .nav::after {
+            content: '';
+            margin-top: 5px;
+            display: block;
+            width: 0px;
+            height: 3px;
+            background-color: black;
+            transition: width 0.3s;
+        }
+
+        .nav:hover::after {
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .nav:hover {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        span {
+            width: auto;
+            border-right: 10px;
+        }
+
+        .second {
+            transition: border-bottom 0.3s linear;
+        }
+
+        .second:hover {
+            border-bottom: solid;
+        }
+
+        .fun {
+            margin: 30px 20px;
+            text-decoration: none;
+            position: relative;
+            float: right;
+            font-weight: bold;
+            color: black;
+            background-color: #E6E8EA;
+        }
+
+        .fun:hover {
+            background-color: #A6ACAF;
+
+        }
+
+        .menu {
+            position: relative;
+            float: left;
+            display: block;
+            color: white;
+            background-color: #B80000;
+            padding: 0% 11px;
+            border-right: solid;
+            border-color: #ed746b;
+            border-width: 1.5px;
+            height: 28px;
+            list-style: none;
+
+
+        }
+
+        .menu:hover {
+            border-bottom: solid;
+            border-bottom-width: 4px;
+        }
+
+        .menu:last-child {
+            border-bottom-width: 0px;
+        }
+
+        .under {
+            text-decoration: none;
+            color: white;
+        }
+
+        .under:hover {
+            text-decoration: none;
+            color: white;
+        }
+        .menudrop{
+            /* display: none; */
+        }
+       
+        .content3 {
+            display: none;
+            position: absolute;
+            
+            padding-top: 14px;
+           
+            background-color: black;
+            height: 55px;
+            opacity: .9;
+            margin: 28px 140px;
+        }
+        .content3 button{
+            height: 30px;
+            color: white;
+            background-color: black;
+            
+            font-family: 'DM Sans',sans-serif;color:white;
+            
+            border-right-color:gray;
+            padding-right: 146px;
+            border-width: .5px;
+        }
+       
+        .more:hover .content3 {
+            display:block;
+        }
+        .more:hover button{
+            display: block;
+        }
+
+        
+
+        .news {
+            text-decoration: none;
+            color: black;
+        }
+
+        .news:hover {
+            text-decoration: underline;
+            color: red;
+        }
+        
+    </style>
+
+</head>
+
+<body style="margin:0%">
+    <div class="row" style="height:65px; width:  auto;margin: 0px 130px;padding:0% 0%;">
+        <img src="pics/1.jpg" alt="can't load" style="height: 50px;
+        width: 100px;margin-bottom: 10px;">
+
+        <a class="sign" href="">
+            <img class="second" src="pics/3.png" style="height: 65px;width: 219px;margin-left:20px;">
+        </a>
+
+        <a class=" fun" href=""
+            style="position: relative;float:right;margin-top: 25px ;margin-bottom:25px ;margin-right:0px;margin-left:20px;padding: 5px;text-decoration: none;"><img
+                src="pics/search.svg"> Search BBC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a class="nav" href="">. . .</a>
+        <a class="nav " href="">Culture</a>
+        <a class="nav" href="">Future</a>
+        <a class="nav" href="">Travel</a>
+        <a class="nav" href="">Worklife</a>
+        <a class="nav" href="">Reel</a>
+        <a class="nav" href="">Sport</a>
+        <a class="nav" href="">News</a>
+        <a class="nav" id="titles" href="" style="border-left:solid;padding-left: 30px;border-color: grey;">Home</a>
+
+
+
+    </div>
+    <div style="margin:0;background-color: #B80000;height: 65px;">
+        <span style="margin: 0px 130px;">
+            <span style="font-size:45px;font-weight:bold;font-family: 'DM Sans',sans-serif;color:white;"><a href=""
+                    style="text-decoration: none;color:white">NEWS</a></span></span>
+    </div>
+    <div class="row row1" style="background-color:#B80000;height:28px;padding: 0px;margin:0px">
+        <ul type="none" style="margin:0px 130px;display: block;padding-left: 0px;">
+            <li class="menu"><a href="" class="under">Home</a></li>
+            <li class="menu"><a href="" class="under">War in Ukraine</a></li>
+            <li class="menu"><a href="" class="under">Coronavirus</a></li>
+            <li class="menu"><a href="" class="under">Climate</a></li>
+            <li class="menu"><a href="" class="under">Climate</a></li>
+            <li class="menu"><a href="" class="under">Video</a></li>
+            <li class="menu"><a href="" class="under">World</a></li>
+            <li class="menu"><a href="" class="under">Asia</a></li>
+            <li class="menu"><a href="" class="under">UK</a></li>
+            <li class="menu"><a href="" class="under">Tech</a></li>
+            <li class="menu"><a href="" class="under">Science</a></li>
+            <li class="menu"><a href="" class="under">Stories</a></li>
+            <li class="menu"><a href="" class="under">Entertainments & Arts</a></li>
+            <li class="menu"><a href="" class="under">Health</a></li>
+            <li class="menu"><a href="" class="under">World News TV</a></li>
+            <div class="more">
+            <li class="menu more"><a href="" class="under more">
+                More <img src="pics/drop.png"
+                        style="height: 15px;width: 15px;margin: 0px;"></a>
+                    </li>
+                        
+        </ul>
+        <div class="content3">
+            <button href="#">World News Tv</button>
+            <button href="#">In Pictures Tv</button>
+            <button href="#">Reality Checks</button>
+            <button href="#">News Beat Tv</button>
+            <button href="#">Long Reads</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="row" style="height:84px;padding-top: 5px;margin: 0px;">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-10">
+         
+            <span style="font-size: 22px;border-bottom: solid;border-color: brown;">
+                Tech
+            </span>
+            <div class="row" style="background-color:#EEEEEE;height:30px;margin-top:17px;"></div>
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+    </div>
+
+
+    <div class="row" style="margin: 0px;padding:0%;border:0px">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-4" style="padding-left:15px;padding-right:15px;">
+            <a href="" style="text-decoration:none">
+                <img class="image-highlight" src="pics/4.png" style="height: auto;width: 480px;margin-bottom: 10px;"><br>
+                <span style="color:brown;font-size: 28px;font-family: 'DM Sans', sans-serif;
+      font-family: 'Libre Baskerville', serif;
+      font-family: 'Roboto Slab', serif;font-weight: bold;" class="news"> New EU law could open up messaging and app
+                    buying</span> <br> <span style="color:#6f7885">The Digital Markets designed to curb the market power
+                    of big-tech is starting to come into force.</span><br><img src="pics/12.png" height="15px"
+                    width="15px">6h &nbsp;</a><span style="border-left:solid;border-color: #A6ACAF;border-width: 1px;"
+                class="news"> <a href="" class="news"> &nbsp;Technology</a></span>
+            <br><br>
+            <b>
+                <ul>
+                    <li>Regulator needs teeth to cub big tech, MPs say</li>
+                    <li>
+                        Europe agrees new law to curb Big Tech dominance
+                    </li>
+                </ul>
+            </b>
+        </div>
+        <div class="col-sm-2" style="padding-right:5px;padding-left:5px;">
+            <a href="" style="text-decoration:none">
+                <img src="pics/5.png" style="height: auto;width: 240px;"><br>
+                <b style="font-size:16px" class="news">Instagram bug tells users accounts are suspended</b><br>
+                <span style="color:#6f7885;">Some have received a message saying their account has been <br>stopped for
+                    30 days.
+                    <br><img src="pics/12.png" height="15px" width="15px">19h &nbsp;</span><span
+                    style="border-left:solid;border-color: #A6ACAF;border-width: 1px;">
+            </a><a href="" class="news"> &nbsp;Technology</a></span>
+
+        </div>
+        <div class="col-sm-2" style="padding-right:5px;padding-left:5px;">
+            <a href="" style="text-decoration:none">
+                <img src="pics/6.png" style="height: auto;width: 240px;"><br>
+                <b style="font-size:16px" class="news">UK battery firm near collapse as it seeks funding</b>
+                <span style="color:#6f7885;">
+                    <br>
+                    British could run out of money<br> after the government refused to <br>sdvance £30m in funding.
+                    <br>
+                    <img src="pics/12.png" height="15px" width="15px">20h &nbsp;</span><span
+                    style="border-left:solid;border-color: #A6ACAF;border-width: 1px;"> </a><a href=""
+                class="news">&nbsp;Business</span></a>
+        </div>
+        <div class="col-sm-2" style="padding-right:15px;padding-left:5px;">
+            <a href="" style="text-decoration:none">
+                <img src="pics/7.png" style="height: auto;width: 240px;">
+                <br>
+                <b style="font-size:16px" class="news">Elon Musk says Twitter blue tick to be revamped </b>
+                <span style="color:#6f7885;">
+                    <br>
+                    Reports suggest the firm could
+                    <br>
+                    charge users almost $20 per month <br>to be verified.
+                    <br><img src="pics/12.png" height="15px" width="15px">23h &nbsp;</span><span
+                    style="border-left:solid;border-color: #A6ACAF;border-width: 1px;"> </a><a href=""
+                class="news">&nbsp;Business</a></span>
+        </div>
+        <div class="col-sm-1">
+
+        </div>
+    </div>
+
+
+
+
+</body>
+<script type="text/javascript">
+    var colors = ['#ff0000', '#00ff00', '#0000ff'];
+    var random_color = colors[Math.floor(Math.random() * colors.length)];
+    document.getElementById('title').style.color = random_color;
+</script>
+
+</html>
